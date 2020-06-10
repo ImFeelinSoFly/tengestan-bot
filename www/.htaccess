@@ -1,0 +1,26 @@
+RewriteEngine On
+RewriteRule ^([^/]*)/$ /index.php?act=$1 [L]
+RewriteRule ^([^/]*)/([^/]*)/$ /index.php?act=$1&i2=$2 [L]
+RewriteRule ^view/([^/]*)\.html$ /crypto-poster/view_news.php?alias=$1 [L]
+
+ <IfModule mod_php7.c>
+   php_value short_open_tag 1
+   php_value memory_limit 666M
+   php_value post_max_size 100M
+   php_value upload_max_filesize 30M
+   php_value session.cookie_lifetime 99200
+   php_value session.gc_maxlifetime 99200
+   php_flag display_startup_errors off
+   php_flag display_errors off
+   Options All -Indexes
+ </IfModule>
+ 
+ 
+ <IfModule mod_expires.c>
+  ExpiresActive on
+  ExpiresByType image/jpeg "access plus 3 day"
+  ExpiresByType image/gif "access plus 3 day"
+  ExpiresByType image/png "access plus 3 day"
+  ExpiresByType text/css "access plus 3 day"
+  #ExpiresByType application/javascript "access plus 3 day"  
+</IfModule>
