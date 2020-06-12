@@ -6,10 +6,10 @@
 	ini_set('display_errors', 0);
 	session_start();
 		
-	DEFINE('login','XXXXXXXXXXXX');
-	DEFINE('pass','XXXXXXXXXXXX');
+	DEFINE('login','root');
+	DEFINE('pass','idris6397');
 	DEFINE('host','localhost');
-	DEFINE('base','XXXXXXXXXXXX');
+	DEFINE('base','tenge');
 	DEFINE('dir','pages_x/');
 	DEFINE('root_dir',$_SERVER['DOCUMENT_ROOT']);
 
