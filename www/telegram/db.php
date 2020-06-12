@@ -5,9 +5,9 @@
 	ini_set('display_errors', 0);
 	
 	session_start();
-	DEFINE('base','XXXXXXXXXXXX');
-	DEFINE('login','XXXXXXXXXXXX');
-	DEFINE('pass','XXXXXXXXXXXX');
+	DEFINE('base','tenge');
+	DEFINE('login','root');
+	DEFINE('pass','idris6397');
 	DEFINE('host','localhost');
 		
 	$db = mysqli_connect(host,login,pass,base);
